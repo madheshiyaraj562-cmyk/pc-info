@@ -4,7 +4,7 @@ import webbrowser
 from jinja2 import Template
 
 def render_html_report(data, output_path="report.html", auto_open=False):
-    template_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), "template.html")
+    template_file = os.path.join(os.path.dirname(__file__), "template.html")
     with open(template_file, "r", encoding="utf-8") as f:
         tmpl_content = f.read()
 

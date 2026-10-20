@@ -11,8 +11,12 @@ A lightweight, cross-platform CLI tool that reports your computer's hardware det
 
 ## Installation
 
-Requires Python 3. On Windows, install it with `winget install Python.Python.3.12`, then open a new terminal.
+Requires Python 3. On Windows, install it, then open a new terminal.
 
+If you don't have Python on Windows, open PowerShell and run:
+```
+winget install Python.Python.3.12
+```
 ```
 pip install https://github.com/madheshiyaraj562-cmyk/pc-info/archive/refs/heads/main.zip
 ```
@@ -38,11 +42,16 @@ pip install git+https://github.com/madheshiyaraj562-cmyk/pc-info.git
 > 💡 Use `--safe` before sharing a report with anyone.
 
 ## Uninstall
-
+1. Uninstall CLI Project
+To remove the PC info tool from your system:
 ```
 pip uninstall pc-info -y
 ```
-
+2. Uninstall Python (Optional)
+If you installed Python just for this and want to remove it completely from Windows:
+```
+winget uninstall Python.Python.3.12
+```
 ## Author
 
 Made by Raj Madheshiya @ 2026

@@ -1,40 +1,52 @@
 # pc-info 🖥️
 
-A lightweight, cross-platform Python CLI tool that gathers full hardware diagnostic details about your computer and generates a beautiful, standalone, privacy-safe HTML dashboard to share with friends, communities, or repair shops.
+A lightweight, cross-platform CLI tool that reports your computer's hardware details and generates a standalone, privacy-safe HTML dashboard.
 
----
+## Features
 
-## 🚀 How to Run Commands
+- Full hardware report: CPU, GPU, RAM, storage, sensors, network, security and more
+- Shareable HTML dashboard
+- Safe mode that masks hostname, username, IP, MAC and Wi-Fi SSID
+- Neofetch-style quick summary
 
-### 1. View the Help Screen & Options Guide
-```powershell
-pc-info --help
+## Installation
+
+Requires Python 3. On Windows, install it with `winget install Python.Python.3.12`, then open a new terminal.
+
 ```
-*(You can also use `-h` or `pc-info help`).*
-
-### 2. Full Terminal Diagnostic Report
-```powershell
-pc-info
+pip install https://github.com/madheshiyaraj562-cmyk/pc-info/archive/refs/heads/main.zip
 ```
-* Shows the comprehensive hardware breakdown (CPU, GPU, RAM, Storage, Sensors, Network, Security, Startup, Dev Tools, and Quick Analysis).
-* Includes a clean **"Press 'q' or Enter to quit"** prompt at the end so terminal windows do not close automatically.
 
-### 3. Generate & Open the HTML Dashboard
-```powershell
-pc-info --html
-```
-* Generates `report.html` and automatically opens it in your default web browser.
-* You can specify a custom filename: `pc-info --html my_specs.html`.
+Or with Git:
 
-### 4. 🛡️ Safe Mode (Mask Sensitive Info)
-```powershell
-pc-info --safe
-# or generate a safe HTML file to send to someone:
-pc-info --html safe_report.html --safe
 ```
-* Redacts hostname, username, IP address, MAC address, and Wi-Fi SSID.
+pip install git+https://github.com/madheshiyaraj562-cmyk/pc-info.git
+```
 
-### 5. Quick Neofetch-style Summary
-```powershell
-pc-info --fetch
+## Usage
+
+| Command | Description |
+|---|---|
+| `pc-info` | Full terminal report |
+| `pc-info --help` | Show all options |
+| `pc-info --html` | Generate and open `report.html` |
+| `pc-info --html my_specs.html` | Use a custom file name |
+| `pc-info --safe` | Mask sensitive info |
+| `pc-info --html safe_report.html --safe` | Shareable safe report |
+| `pc-info --fetch` | Quick neofetch-style summary |
+
+> 💡 Use `--safe` before sharing a report with anyone.
+
+## Uninstall
+
 ```
+pip uninstall pc-info -y
+```
+
+## Author
+
+Made by Raj Madheshiya @ 2026
+
+## License
+
+MIT License

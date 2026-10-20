@@ -91,7 +91,7 @@ def main():
         saved_path = render_html_report(data, output_path=filename, auto_open=auto_open)
         print(f"✨ HTML dashboard generated: {saved_path}")
         if auto_open:
-            print("🌐 Opening in default browser...")
+            print("Opening in default browser.....")
         return
 
     # 3. Terminal Fetch

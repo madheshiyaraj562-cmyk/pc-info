@@ -18,6 +18,6 @@ setup(
     },
     include_package_data=True,
     package_data={
-    "renderers": ["template.html"],
+        "": ["template.html"]
     }
 )

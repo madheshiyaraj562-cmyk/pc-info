@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pc-info",
-    version="1.0.0",
+    version="2.3.1",
     description="Cross-platform hardware profiler & safe shareable HTML dashboard generator.",
     author="pc-info team",
     py_modules=["pc_info", "health"],

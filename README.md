@@ -1,40 +1,61 @@
 # pc-info 🖥️
 
-A lightweight, cross-platform Python CLI tool that gathers full hardware diagnostic details about your computer and generates a beautiful, standalone, privacy-safe HTML dashboard to share with friends, communities, or repair shops.
+A lightweight, cross-platform CLI tool that reports your computer's hardware details and generates a standalone, privacy-safe HTML dashboard.
 
----
+## Features
 
-## 🚀 How to Run Commands
+- Full hardware report: CPU, GPU, RAM, storage, sensors, network, security and more
+- Shareable HTML dashboard
+- Safe mode that masks hostname, username, IP, MAC and Wi-Fi SSID
+- Neofetch-style quick summary
 
-### 1. View the Help Screen & Options Guide
-```powershell
-pc-info --help
+## Installation
+
+Requires Python 3. On Windows, install it, then open a new terminal.
+
+If you don't have Python on Windows, open PowerShell and run:
 ```
-*(You can also use `-h` or `pc-info help`).*
-
-### 2. Full Terminal Diagnostic Report
-```powershell
-pc-info
+winget install Python.Python.3.12
 ```
-* Shows the comprehensive hardware breakdown (CPU, GPU, RAM, Storage, Sensors, Network, Security, Startup, Dev Tools, and Quick Analysis).
-* Includes a clean **"Press 'q' or Enter to quit"** prompt at the end so terminal windows do not close automatically.
-
-### 3. Generate & Open the HTML Dashboard
-```powershell
-pc-info --html
 ```
-* Generates `report.html` and automatically opens it in your default web browser.
-* You can specify a custom filename: `pc-info --html my_specs.html`.
-
-### 4. 🛡️ Safe Mode (Mask Sensitive Info)
-```powershell
-pc-info --safe
-# or generate a safe HTML file to send to someone:
-pc-info --html safe_report.html --safe
+pip install https://github.com/madheshiyaraj562-cmyk/pc-info/archive/refs/heads/main.zip
 ```
-* Redacts hostname, username, IP address, MAC address, and Wi-Fi SSID.
 
-### 5. Quick Neofetch-style Summary
-```powershell
-pc-info --fetch
+Or with Git:
+
 ```
+pip install git+https://github.com/madheshiyaraj562-cmyk/pc-info.git
+```
+
+## Usage
+
+| Command | Description |
+|---|---|
+| `pc-info` | Full terminal report |
+| `pc-info --help` | Show all options |
+| `pc-info --html` | Generate and open `report.html` |
+| `pc-info --html my_specs.html` | Use a custom file name |
+| `pc-info --safe` | Mask sensitive info |
+| `pc-info --html safe_report.html --safe` | Shareable safe report |
+| `pc-info --fetch` | Quick neofetch-style summary |
+
+> 💡 Use `--safe` before sharing a report with anyone.
+
+## Uninstall
+1. Uninstall CLI Project
+To remove the PC info tool from your system:
+```
+pip uninstall pc-info -y
+```
+2. Uninstall Python (Optional)
+If you installed Python just for this and want to remove it completely from Windows:
+```
+winget uninstall Python.Python.3.12
+```
+## Author
+
+Made by Raj Madheshiya @ 2026
+
+## License
+
+MIT License

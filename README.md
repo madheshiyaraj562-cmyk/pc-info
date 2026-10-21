@@ -1,5 +1,5 @@
-# pc-info 🖥️
-
+# pc-info 
+> !! Fully vibe-coded. No human brain cells were used in the making of this project. 💀
 A lightweight, cross-platform CLI tool that reports your computer's hardware details and generates a standalone, privacy-safe HTML dashboard.
 
 ## Features
@@ -14,9 +14,13 @@ A lightweight, cross-platform CLI tool that reports your computer's hardware det
 Requires Python 3. On Windows, install it, then open a new terminal.
 
 If you don't have Python on Windows, open PowerShell and run:
+
 ```
 winget install Python.Python.3.12
 ```
+
+If you don't have Git:
+
 ```
 pip install https://github.com/madheshiyaraj562-cmyk/pc-info/archive/refs/heads/main.zip
 ```

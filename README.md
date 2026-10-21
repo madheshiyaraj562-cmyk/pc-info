@@ -1,5 +1,6 @@
 # pc-info 
 > !! Fully vibe-coded. No human brain cells were used in the making of this project. 💀
+
 A lightweight, cross-platform CLI tool that reports your computer's hardware details and generates a standalone, privacy-safe HTML dashboard.
 
 ## Features
